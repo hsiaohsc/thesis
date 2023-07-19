@@ -1,0 +1,13 @@
+img1: .\imgs\inkscape\8_ink.png
+img2: D:\110598078_±ißN·y\diffvg\¯«©`¤t½Ä®ö¹êÅç(V100)\b_1000_i200\iter_199.png
+img3: D:\110598078_±ißN·y\diffvg\¯«©`¤t½Ä®ö¹êÅç(V100)\b_2000_i200\iter_199.png
+ref: .\imgs\fuyue36\01Tsunami.jpeg
+MSE img1: 0.007776698097586632
+MSE img2: 0.01679963618516922
+MSE img3: 0.013283664360642433
+PSNR img1: 21.092047606433315
+PSNR img2: 17.747001233029643
+PSNR img3: 18.76682106286723
+SSIM img1: 0.7409267425537109
+SSIM img2: 0.5207713842391968
+SSIM img3: 0.5826011896133423

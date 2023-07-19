@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            table, th, td {
+              border:1px solid black;
+              text-align: center;
+            }
+            .fuyue800{
+                width: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2>Inkscape 實驗</h2>
+            <h3>實驗一、掃描數花費時間比較</h3>
+            <p>Ground Truth</p>
+            <img src="imgs/fuyue36/01Tsunami.jpeg" width="500">
+            <table>
+                <tr>
+                    <th>掃描數</th>
+                    <th>8</th>
+                    <th>16</th>
+                    <th>32</th>
+                    <th>64</th>
+                    <th>128</th>
+                    <th>256</th>
+                </tr>
+                <tr>
+                    <td>花費時長</td>
+                    <td>約 9s</td>
+                    <td>約 12s</td>
+                    <td>約 28s</td>
+                    <td>約 58s</td>
+                    <td>約 2m 29s</td>
+                    <td>約 4m 47s</td>
+                </tr>
+                <tr>
+                    <td>Inkscape Result</td>
+                    <td><img src="imgs/image_compare/01_8-32/img1.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/01_8-32/img2.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/01_8-32/img3.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/01_64-256/img1.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/01_64-256/img2.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/01_64-256/img3.png" class="fuyue800"></td>
+                </tr>
+                <tr>
+                    <td>比較</td>
+                    <td><img src="imgs/image_compare/01_8-32/diff1.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/01_8-32/diff2.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/01_8-32/diff3.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/01_64-256/diff1.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/01_64-256/diff2.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/01_64-256/diff3.png" class="fuyue800"></td>
+                </tr>
+                <tr>
+                    <td>MSE</td>
+                    <td>0.0077</td>
+                    <td>0.0088</td>
+                    <td>0.0098</td>
+                    <td>0.0117</td>
+                    <td>0.0133</td>
+                    <td>0.0149</td>
+                </tr>
+                <tr>
+                    <td>PSNR</td>
+                    <td>21.092</td>
+                    <td>20.556</td>
+                    <td>20.068</td>
+                    <td>19.333</td>
+                    <td>18.753</td>
+                    <td>18.277</td>
+                </tr>
+                <tr>
+                    <td>SSIM</td>
+                    <td>0.741</td>
+                    <td>0.734</td>
+                    <td>0.755</td>
+                    <td>0.752</td>
+                    <td>0.737</td>
+                    <td>0.714</td>
+                </tr>
+            </table>
+        
+            <h3>實驗二、Inkscape vs Diffvg</h3>
+            <table>
+                <tr>
+                    <th>Ground Truth</th>
+                    <th>Inkscape 掃描數: 8</th>
+                    <th>Inkscape 掃描數: 128</th>
+                    <th>Diffvg 色塊數: 1000</th>
+                    <th>Diffvg 色塊數: 2000</th>
+                </tr>
+                <tr>
+                    <td>參數</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>iter: 200</td>
+                    <td>iter: 200</td>
+                </tr>
+                <tr>
+                    <td><img src="imgs/fuyue36/01Tsunami.jpeg" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/01_inkvsdiff/img1.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/01_64-256/img2.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/01_inkvsdiff/img2.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/01_inkvsdiff/img3.png" class="fuyue800"></td>
+                </tr>
+                <tr>
+                    <td>比較</td>
+                    <td><img src="imgs/image_compare/01_inkvsdiff/diff1.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/01_64-256/diff2.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/01_inkvsdiff/diff2.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/01_inkvsdiff/diff3.png" class="fuyue800"></td>
+                </tr>
+                <tr>
+                    <td>時間</td>
+                    <td>約 9s</td>
+                    <td>約 2m 29s</td>
+                    <td>147.90s (約 2m 28s)</td>
+                    <td>290.64s (約 4m 50s)</td>
+                </tr>
+                <tr>
+                    <td>MSE</td>
+                    <td>0.0077</td>
+                    <td>0.0133</td>
+                    <td>0.0168</td>
+                    <td>0.0133</td>
+                </tr>
+                <tr>
+                    <td>PSNR</td>
+                    <td>21.092</td>
+                    <td>18.753</td>
+                    <td>17.747</td>
+                    <td>18.767</td>
+                </tr>
+                <tr>
+                    <td>SSIM</td>
+                    <td>0.741</td>
+                    <td>0.737</td>
+                    <td>0.521</td>
+                    <td>0.583</td>
+                </tr>
+            </table>
+            <br><br><hr><br><br>
+            <table>
+                <tr>
+                    <th>Ground Truth</th>
+                    <th>Inkscape 掃描數: 8</th>
+                    <th>Inkscape 掃描數: 128</th>
+                    <th>Diffvg 色塊數: 2000</th>
+                </tr>
+                <tr>
+                    <td><img src="imgs/fuyue36/07musashi-province.jpeg" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/inkscape_07/img1.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/inkscape_07/img2.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/inkscape_07/img3.png" class="fuyue800"></td>
+                </tr>
+                <tr>
+                    <td>比較</td>
+                    <td><img src="imgs/image_compare/inkscape_07/diff1.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/inkscape_07/diff2.png" class="fuyue800"></td>
+                    <td><img src="imgs/image_compare/inkscape_07/diff3.png" class="fuyue800"></td>
+                </tr>
+                <tr>
+                    <td>MSE</td>
+                    <td>0.0090</td>
+                    <td>0.0098</td>
+                    <td>0.0092</td>
+                </tr>
+                <tr>
+                    <td>PSNR</td>
+                    <td>20.461</td>
+                    <td>20.099</td>
+                    <td>20.337</td>
+                </tr>
+                <tr>
+                    <td>SSIM</td>
+                    <td>0.681</td>
+                    <td>0.714</td>
+                    <td>0.581</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h2>Diffvg 神奈川沖浪變數實驗</h2>
+            <h3>實驗一、彩帶 / 色塊數量結果比較</h3>
+            <table>
+                <tr>
+                    <th>Ground Truth</th>
+                    <th>彩帶數: 100</th>
+                    <th>彩帶數: 500</th>
+                    <th>彩帶數: 1000</th>
+                    <th>彩帶數: 2000</th>
+                    <th>彩帶數: 2500</th>
+                    
+                </tr>
+                <tr>
+                    <td><img src="imgs/fuyue36/01Tsunami.jpeg" class="fuyue800"></td>
+                    <td><a href="imgs/painterly/s_100_w15_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_100_w15_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_500_w15_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_500_w15_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_1000_w15_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_1000_w15_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_2000_w15_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_2000_w15_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_2500_w15_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_2500_w15_i200/result.svg" class="fuyue800"></a></td>
+                </tr>
+                <tr>
+                    <td>MSE</td>
+                    <td>0.0350</td>
+                    <td>0.0227</td>
+                    <td>0.0186</td>
+                    <td>0.0150</td>
+                    <td>0.0141</td>
+                </tr>
+                <tr>
+                    <td>時間</td>
+                    <td>32.75s</td>
+                    <td>94.66s</td>
+                    <td>169.61s</td>
+                    <td>328.22s</td>
+                    <td>409.82s</td>
+                </tr>
+            </table>
+            <br><hr><br>
+            <table>
+                <tr>
+                    <th>Ground Truth</th>
+                    <th>色塊數: 100</th>
+                    <th>色塊數: 500</th>
+                    <th>色塊數: 1000</th>
+                    <th>色塊數: 2000</th>
+                    <th>色塊數: 2500</th>
+                </tr>
+                <tr>
+                    <td><img src="imgs/fuyue36/01Tsunami.jpeg" class="fuyue800"></td>
+                    <td><a href="imgs/painterly/b100_i200/animation.svg" target="_blank"><img src="imgs/painterly/b100_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/b500_i200/animation.svg" target="_blank"><img src="imgs/painterly/b500_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/b1000_i200/animation.svg" target="_blank"><img src="imgs/painterly/b1000_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/b2000_i200/animation.svg" target="_blank"><img src="imgs/painterly/b2000_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/b2500_i200/animation.svg" target="_blank"><img src="imgs/painterly/b2500_i200/result.svg" class="fuyue800"></a></td>
+                </tr>
+                <tr>
+                    <td>MSE</td>
+                    <td>0.0310</td>
+                    <td>0.0231</td>
+                    <td>0.0168</td>
+                    <td>0.0132</td>
+                    <td>0.0123</td>
+                </tr>
+                <tr>
+                    <td>時間</td>
+                    <td>43.83s</td>
+                    <td>57.72s</td>
+                    <td>147.90s</td>
+                    <td>290.64s</td>
+                    <td>360.81s</td>
+                </tr>
+            </table>
+
+            <h3>實驗二、彩帶寬度結果比較</h3>
+            <table>
+                <tr>
+                    <th>Ground Truth</th>
+                    <th>彩帶寬度: 1</th>
+                    <th>彩帶寬度: 2</th>
+                    <th>彩帶寬度: 5</th>
+                    <th>彩帶寬度: 10</th>
+                    <th>彩帶寬度: 15</th>
+                    <th>彩帶寬度: 20</th>
+                    
+                </tr>
+                <tr>
+                    <td><img src="imgs/fuyue36/01Tsunami.jpeg" class="fuyue800"></td>
+                    <td><a href="imgs/painterly/s_1000_w1_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_1000_w1_i200/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_1000_w2_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_1000_w2_i200/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_1000_w5_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_1000_w5_i200/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_1000_w10_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_1000_w10_i200/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_1000_w15_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_1000_w15_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_1000_w20_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_1000_w20_i200/iter_199.svg" class="fuyue800"></a></td>
+                </tr>
+                <tr>
+                    <td>MSE</td>
+                    <td>0.0373</td>
+                    <td>0.0230</td>
+                    <td>0.0190</td>
+                    <td>0.0189</td>
+                    <td>0.0186</td>
+                    <td>0.0187</td>
+                </tr>
+                <tr>
+                    <td>時間</td>
+                    <td>176.39s</td>
+                    <td>177.37s</td>
+                    <td>179.74s</td>
+                    <td>178.42s</td>
+                    <td>169.61s</td>
+                    <td>176.51s</td>
+                </tr>
+            </table>
+
+            <h3>實驗三、彩帶 / 色塊回合數結果比較</h3>
+            <table>
+                <tr>
+                    <th>Ground Truth</th>
+                    <th>回合數: 100</th>
+                    <th>回合數: 500</th>
+                    <th>回合數: 1000</th>
+                    <th>回合數: 2000</th>
+                    <th>回合數: 2500</th>
+                    
+                </tr>
+                <tr>
+                    <td><img src="imgs/fuyue36/01Tsunami.jpeg" class="fuyue800"></td>
+                    <!-- <td><a href="imgs/painterly/s_100_w15_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_100_w15_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_500_w15_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_500_w15_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_1000_w15_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_1000_w15_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_2000_w15_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_2000_w15_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_2500_w15_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_2500_w15_i200/result.svg" class="fuyue800"></a></td> -->
+                </tr>
+                <tr>
+                    <td>MSE</td>
+                    <!-- <td>0.0350</td>
+                    <td>0.0227</td>
+                    <td>0.0186</td>
+                    <td>0.0150</td>
+                    <td>0.0141</td> -->
+                </tr>
+                <tr>
+                    <td>時間</td>
+                    <!-- <td>32.75s</td>
+                    <td>94.66s</td>
+                    <td>169.61s</td>
+                    <td>328.22s</td>
+                    <td>409.82s</td> -->
+                </tr>
+            </table>
+            <br><hr><br>
+            <table>
+                <tr>
+                    <th>Ground Truth</th>
+                    <th>回合數: 100</th>
+                    <th>回合數: 500</th>
+                    <th>回合數: 1000</th>
+                    <th>回合數: 2000</th>
+                    <th>回合數: 2500</th>
+                </tr>
+                <tr>
+                    <td><img src="imgs/fuyue36/01Tsunami.jpeg" class="fuyue800"></td>
+                    <!-- <td><a href="imgs/painterly/b100_i200/animation.svg" target="_blank"><img src="imgs/painterly/b100_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/b500_i200/animation.svg" target="_blank"><img src="imgs/painterly/b500_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/b1000_i200/animation.svg" target="_blank"><img src="imgs/painterly/b1000_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/b2000_i200/animation.svg" target="_blank"><img src="imgs/painterly/b2000_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/b2500_i200/animation.svg" target="_blank"><img src="imgs/painterly/b2500_i200/result.svg" class="fuyue800"></a></td> -->
+                </tr>
+                <tr>
+                    <td>MSE</td>
+                    <!-- <td>0.0310</td>
+                    <td>0.0231</td>
+                    <td>0.0168</td>
+                    <td>0.0132</td>
+                    <td>0.0123</td> -->
+                </tr>
+                <tr>
+                    <td>時間</td>
+                    <!-- <td>43.83s</td>
+                    <td>57.72s</td>
+                    <td>147.90s</td>
+                    <td>290.64s</td>
+                    <td>360.81s</td> -->
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Ground Truth</th>
+                    <th>彩帶數: 1000</th>
+                    <th>彩帶數: 2000</th>
+                    <th>色塊數: 1000</th>
+                    <th>色塊數: 2000</th>
+                    <!-- <th>回合數: 2500</th> -->
+                </tr>
+                <tr>
+                    <td><img src="imgs/fuyue36/01Tsunami.jpeg" class="fuyue800"></td>
+                    <td><a href="imgs/painterly/b500_i200/animation.svg" target="_blank"><img src="imgs/painterly/b500_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/b500_i200/animation.svg" target="_blank"><img src="imgs/painterly/b500_i200/result.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/b500_i200/animation.svg" target="_blank"><img src="imgs/painterly/b500_i200/result.svg" class="fuyue800"></a></td>
+                    
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

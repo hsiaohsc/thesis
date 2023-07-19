@@ -1,0 +1,13 @@
+img1: .\imgs\inkscape\07_8.png
+img2: .\imgs\inkscape\07_128.png
+img3: .\imgs\inkscape\iter_299.png
+ref: .\imgs\fuyue36\07musashi-province.jpeg
+MSE img1: 0.008992290124297142
+MSE img2: 0.009773998521268368
+MSE img3: 0.009252526797354221
+PSNR img1: 20.4612968961435
+PSNR img2: 20.099277310132937
+PSNR img3: 20.33739648418615
+SSIM img1: 0.6810453534126282
+SSIM img2: 0.714738130569458
+SSIM img3: 0.5819242596626282
