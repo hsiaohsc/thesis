@@ -299,93 +299,379 @@
             </table>
 
             <h3>實驗三、彩帶 / 色塊回合數結果比較</h3>
+            <p>彩帶數: 1000，彩帶寬度: 2.0</p>
             <table>
                 <tr>
                     <th>Ground Truth</th>
                     <th>回合數: 100</th>
+                    <th>回合數: 200</th>
                     <th>回合數: 500</th>
                     <th>回合數: 1000</th>
+                    <th>回合數: 1500</th>
                     <th>回合數: 2000</th>
-                    <th>回合數: 2500</th>
-                    
                 </tr>
                 <tr>
                     <td><img src="imgs/fuyue36/01Tsunami.jpeg" class="fuyue800"></td>
-                    <!-- <td><a href="imgs/painterly/s_100_w15_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_100_w15_i200/result.svg" class="fuyue800"></a></td>
-                    <td><a href="imgs/painterly/s_500_w15_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_500_w15_i200/result.svg" class="fuyue800"></a></td>
-                    <td><a href="imgs/painterly/s_1000_w15_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_1000_w15_i200/result.svg" class="fuyue800"></a></td>
-                    <td><a href="imgs/painterly/s_2000_w15_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_2000_w15_i200/result.svg" class="fuyue800"></a></td>
-                    <td><a href="imgs/painterly/s_2500_w15_i200/animation.svg" target="_blank"><img src="imgs/painterly/s_2500_w15_i200/result.svg" class="fuyue800"></a></td> -->
+                    <td><a href="imgs/painterly/s_1000_w2_i2000/animation.svg" target="_blank"><img src="imgs/painterly/s_1000_w2_i2000/iter_99.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_1000_w2_i2000/animation.svg" target="_blank"><img src="imgs/painterly/s_1000_w2_i2000/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_1000_w2_i2000/animation.svg" target="_blank"><img src="imgs/painterly/s_1000_w2_i2000/iter_499.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_1000_w2_i2000/animation.svg" target="_blank"><img src="imgs/painterly/s_1000_w2_i2000/iter_999.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_1000_w2_i2000/animation.svg" target="_blank"><img src="imgs/painterly/s_1000_w2_i2000/iter_1499.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_1000_w2_i2000/animation.svg" target="_blank"><img src="imgs/painterly/s_1000_w2_i2000/iter_1999.svg" class="fuyue800"></a></td>
                 </tr>
                 <tr>
                     <td>MSE</td>
-                    <!-- <td>0.0350</td>
-                    <td>0.0227</td>
-                    <td>0.0186</td>
-                    <td>0.0150</td>
-                    <td>0.0141</td> -->
+                    <td>0.0267</td>
+                    <td>0.0231</td>
+                    <td>0.0200</td>
+                    <td>0.0185</td>
+                    <td>0.0179</td>
+                    <td>0.0173</td>
                 </tr>
                 <tr>
                     <td>時間</td>
-                    <!-- <td>32.75s</td>
-                    <td>94.66s</td>
-                    <td>169.61s</td>
-                    <td>328.22s</td>
-                    <td>409.82s</td> -->
+                    <td>86.75s</td>
+                    <td>177.37s</td>
+                    <td>442.51s</td>
+                    <td>885.33s</td>
+                    <td>958.72s</td>
+                    <td>1909.63s</td>
+                </tr>
+            </table>
+            <p>彩帶數: 2000，彩帶寬度: 2.0</p>
+            <table>
+                <!-- <tr>
+                    <th>Ground Truth</th>
+                    <th>回合數: 100</th>
+                    <th>回合數: 200</th>
+                    <th>回合數: 500</th>
+                    <th>回合數: 1000</th>
+                    <th>回合數: 1500</th>
+                    <th>回合數: 2000</th>
+                </tr> -->
+                <tr>
+                    <td><img src="imgs/fuyue36/01Tsunami.jpeg" class="fuyue800"></td>
+                    <td><a href="imgs/painterly/s_2000_w2_i2000/animation.svg" target="_blank"><img src="imgs/painterly/s_2000_w2_i2000/iter_99.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_2000_w2_i2000/animation.svg" target="_blank"><img src="imgs/painterly/s_2000_w2_i2000/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_2000_w2_i2000/animation.svg" target="_blank"><img src="imgs/painterly/s_2000_w2_i2000/iter_499.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_2000_w2_i2000/animation.svg" target="_blank"><img src="imgs/painterly/s_2000_w2_i2000/iter_999.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_2000_w2_i2000/animation.svg" target="_blank"><img src="imgs/painterly/s_2000_w2_i2000/iter_1499.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/s_2000_w2_i2000/animation.svg" target="_blank"><img src="imgs/painterly/s_2000_w2_i2000/iter_1999.svg" class="fuyue800"></a></td>
+                </tr>
+                <tr>
+                    <td>MSE</td>
+                    <!-- <td>0.0267</td>
+                    <td>0.0231</td>
+                    <td>0.0200</td>
+                    <td>0.0185</td>
+                    <td>0.0179</td>
+                    <td>0.0173</td> -->
+                </tr>
+                <tr>
+                    <td>時間</td>
+                    <!-- <td>86.75s</td>
+                    <td>177.37s</td>
+                    <td>442.51s</td>
+                    <td>885.33s</td>
+                    <td>958.72s</td>
+                    <td>1909.63s</td> -->
                 </tr>
             </table>
             <br><hr><br>
+            <p>色塊數: 1000</p>
             <table>
                 <tr>
                     <th>Ground Truth</th>
                     <th>回合數: 100</th>
+                    <th>回合數: 200</th>
                     <th>回合數: 500</th>
                     <th>回合數: 1000</th>
+                    <th>回合數: 1500</th>
                     <th>回合數: 2000</th>
+                </tr>
+                <tr>
+                    <td><img src="imgs/fuyue36/01Tsunami.jpeg" class="fuyue800"></td>
+                    <td><a href="imgs/painterly/b1000_i2000/animation.svg" target="_blank"><img src="imgs/painterly/b1000_i2000/iter_99.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/b1000_i2000/animation.svg" target="_blank"><img src="imgs/painterly/b1000_i2000/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/b1000_i2000/animation.svg" target="_blank"><img src="imgs/painterly/b1000_i2000/iter_499.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/b1000_i2000/animation.svg" target="_blank"><img src="imgs/painterly/b1000_i2000/iter_999.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/b1000_i2000/animation.svg" target="_blank"><img src="imgs/painterly/b1000_i2000/iter_1499.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/b1000_i2000/animation.svg" target="_blank"><img src="imgs/painterly/b1000_i2000/iter_1999.svg" class="fuyue800"></a></td>
+                </tr>
+                <tr>
+                    <td>MSE</td>
+                    <td>0.0186</td>
+                    <td>0.0168</td>
+                    <td>0.0152</td>
+                    <td>0.0143</td>
+                    <td>0.0139</td>
+                    <td>0.0137</td>
+                </tr>
+                <tr>
+                    <td>時間</td>
+                    <td>77.60s</td>
+                    <td>152.08s</td>
+                    <td>383.94s</td>
+                    <td>783.64s</td>
+                    <td>1173.46s</td>
+                    <td>1564.34s</td>
+                </tr>
+            </table>
+
+            <h2>最高解析度實驗</h2>
+            <h3>實驗一、最高解析度 彩帶寬度結果比較</h3>
+            <!-- <h3>實驗一、最高解析度 彩帶 / 色塊數量結果比較</h3> -->
+            <p>彩帶數量: 1000, 回合數: 200</p>
+            <table>
+                <tr>
+                    <th>Ground Truth</th>
+                    <th>1.0</th>
+                    <th>2.0</th>
+                    <th>10.0</th>
+                    <th>20.0</th>
+                    <th>50.0</th>
+                    <th>100.0 (結果最粗 60)</th>
+                </tr>
+                <tr>
+                    <td><img src="imgs/fuyue36/origin/01Tsunami.jpg" class="fuyue800"></td>
+                    <td><a href="imgs/painterly/origin/width_n1000/w1/animation.svg" target="_blank"><img src="imgs/painterly/origin/width_n1000/w1/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/width_n1000/w2/animation.svg" target="_blank"><img src="imgs/painterly/origin/width_n1000/w2/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/width_n1000/w10/animation.svg" target="_blank"><img src="imgs/painterly/origin/width_n1000/w10/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/width_n1000/w20/animation.svg" target="_blank"><img src="imgs/painterly/origin/width_n1000/w20/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/width_n1000/w50/animation.svg" target="_blank"><img src="imgs/painterly/origin/width_n1000/w50/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/width_n1000/w100/animation.svg" target="_blank"><img src="imgs/painterly/origin/width_n1000/w100/iter_199.svg" class="fuyue800"></a></td>
+                    
+                </tr>
+                <tr>
+                    <td>MSE</td>
+                    <td>0.1510</td>
+                    <td>0.1178</td>
+                    <td>0.0185</td>
+                    <td>0.0149</td>
+                    <td>0.0148</td>
+                    <td>0.0149</td>
+                </tr>
+                <tr>
+                    <td>時間</td>
+                    <td>414.46s</td>
+                    <td>406.56s</td>
+                    <td>420.93s</td>
+                    <td>423.83s</td>
+                    <td>423.89s</td>
+                    <td>425.80s</td>
+                    <!-- <td>465.36s (V100) <br> 1178.03s (Colab Tesla T4)</td>
+                    <td>708.52s (V100)</td>
+                    <td>430.44s (V100)</td>
+                    <td>671.51s (V100)</td> -->
+                </tr>
+            </table>
+            <br><hr><br>
+
+            <h3>實驗二、最高解析度 彩帶 / 色塊數量結果比較</h3>
+            <!-- <h3>實驗一、最高解析度 彩帶 / 色塊數量結果比較</h3> -->
+            <p>彩帶寬度: 50, 回合數: 200</p>
+            <table>
+                <tr>
+                    <th>Ground Truth</th>
+                    <th>100</th>
+                    <!-- <th>200</th> -->
+                    <th>500</th>
+                    <th>1000</th>
+                    <th>1500</th>
+                    <th>2000</th>
+                    <th>2500</th>
+                </tr>
+                <tr>
+                    <td><img src="imgs/fuyue36/origin/01Tsunami.jpg" class="fuyue800"></td>
+                    <td><a href="imgs/painterly/origin/num_paths/s100_w50/animation.svg" target="_blank"><img src="imgs/painterly/origin/num_paths/s100_w50/iter_199.svg" class="fuyue800"></a></td>
+                    <!-- <td><a href="imgs/painterly/origin/num_paths/s200_w50/animation.svg" target="_blank"><img src="imgs/painterly/origin/num_paths/s200_w50/iter_199.svg" class="fuyue800"></a></td> -->
+                    <td><a href="imgs/painterly/origin/num_paths/s500_w50/animation.svg" target="_blank"><img src="imgs/painterly/origin/num_paths/s500_w50/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/width_n1000/w50/animation.svg" target="_blank"><img src="imgs/painterly/origin/width_n1000/w50/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/num_paths/s1500_w50/animation.svg" target="_blank"><img src="imgs/painterly/origin/num_paths/s1500_w50/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/num_paths/s2000_w50/animation.svg" target="_blank"><img src="imgs/painterly/origin/num_paths/s2000_w50/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/num_paths/s2500_w50/animation.svg" target="_blank"><img src="imgs/painterly/origin/num_paths/s2500_w50/iter_199.svg" class="fuyue800"></a></td>
+                    
+                </tr>
+                <tr>
+                    <td>MSE</td>
+                    <td>0.0750</td>
+                    <!-- <td>0.0383</td> -->
+                    <td>0.0211</td>
+                    <td>0.0148</td>
+                    <td>0.0123</td>
+                    <td>0.0109</td>
+                    <td>0.0096</td>
+                </tr>
+                <tr>
+                    <td>時間</td>
+                    <td>263.47s</td>
+                    <!-- <td>279.78s</td> -->
+                    <td>323.90s</td>
+                    <td>423.89s</td>
+                    <td>529.61s</td>
+                    <td>637.36s</td>
+                    <td>744.13s</td>
+                </tr>
+            </table>
+            <br><hr>
+            <p>色塊, 回合數: 200</p>
+            <table>
+                <tr>
+                    <th>Ground Truth</th>
+                    <th>100</th>
+                    <!-- <th>200</th> -->
+                    <th>500</th>
+                    <th>1000</th>
+                    <th>1500</th>
+                    <th>2000</th>
+                    <th>2500</th>
+                </tr>
+                <tr>
+                    <td><img src="imgs/fuyue36/origin/01Tsunami.jpg" class="fuyue800"></td>
+                    <td><a href="imgs/painterly/origin/num_paths/b100/animation.svg" target="_blank"><img src="imgs/painterly/origin/num_paths/b100/iter_199.svg" class="fuyue800"></a></td>
+                    <!-- <td><a href="imgs/painterly/origin/num_paths/b200/animation.svg" target="_blank"><img src="imgs/painterly/origin/num_paths/b200/iter_199.svg" class="fuyue800"></a></td> -->
+                    <td><a href="imgs/painterly/origin/num_paths/b500/animation.svg" target="_blank"><img src="imgs/painterly/origin/num_paths/b500/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/num_paths/b1000/animation.svg" target="_blank"><img src="imgs/painterly/origin/num_paths/b1000/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/num_paths/b1500/animation.svg" target="_blank"><img src="imgs/painterly/origin/num_paths/b1500/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/num_paths/b2000/animation.svg" target="_blank"><img src="imgs/painterly/origin/num_paths/b2000/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/num_paths/b2500/animation.svg" target="_blank"><img src="imgs/painterly/origin/num_paths/b2500/iter_199.svg" class="fuyue800"></a></td>
+                    
+                </tr>
+                <tr>
+                    <td>MSE</td>
+                    <td>0.0420</td>
+                    <!-- <td>待補</td> -->
+                    <td>0.0157</td>
+                    <td>0.0109</td>
+                    <td>0.0088</td>
+                    <td>0.0079</td>
+                    <td>0.0071</td>
+                </tr>
+                <tr>
+                    <td>時間</td>
+                    <td>247.34s</td>
+                    <!-- <td>待補s</td> -->
+                    <td>290.35s</td>
+                    <td>376.74s</td>
+                    <td>473.31s</td>
+                    <td>573.41s</td>
+                    <td>676.71s</td>
+                </tr>
+            </table>
+
+            <h3>實驗三、最高解析度 彩帶 / 色塊回合數結果比較</h3>
+            <!-- <h3>實驗一、最高解析度 彩帶 / 色塊數量結果比較</h3> -->
+            <p>彩帶數量: 1500, 彩帶寬度: 50.0</p>
+            <table>
+                <tr>
+                    <th>Ground Truth</th>
+                    <th>100</th>
+                    <th>200</th>
+                    <th>500</th>
+                    <th>1000</th>
+                    <th>1500</th>
+                    <th>2000</th>
+                </tr>
+                <tr>
+                    <td><img src="imgs/fuyue36/origin/01Tsunami.jpg" class="fuyue800"></td>
+                    <td><a href="imgs/painterly/origin/iters/s1500_w50/animation.svg" target="_blank"><img src="imgs/painterly/origin/iters/s1500_w50/iter_99.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/iters/s1500_w50/animation.svg" target="_blank"><img src="imgs/painterly/origin/iters/s1500_w50/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/iters/s1500_w50/animation.svg" target="_blank"><img src="imgs/painterly/origin/iters/s1500_w50/iter_499.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/iters/s1500_w50/animation.svg" target="_blank"><img src="imgs/painterly/origin/iters/s1500_w50/iter_999.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/iters/s1500_w50/animation.svg" target="_blank"><img src="imgs/painterly/origin/iters/s1500_w50/iter_1499.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/iters/s1500_w50/animation.svg" target="_blank"><img src="imgs/painterly/origin/iters/s1500_w50/iter_1999.svg" class="fuyue800"></a></td>
+                    
+                </tr>
+                <tr>
+                    <td>MSE</td>
+                    <td>0.0191</td>
+                    <td>0.0122</td>
+                    <td>0.0093</td>
+                    <td>0.0081</td>
+                    <td>0.0076</td>
+                    <td>0.0073</td>
+                </tr>
+                <tr>
+                    <td>時間</td>
+                    <td>271.00s</td>
+                    <td>547.63s</td>
+                    <td>1397.64s</td>
+                    <td>2868.10s</td>
+                    <td>4382.55s</td>
+                    <td>5937.97s</td>
+                </tr>
+            </table>
+            <br><hr>
+            <p>色塊, 回合數: 200</p>
+            <table>
+                <tr>
+                    <th>Ground Truth</th>
+                    <th>100</th>
+                    <th>200</th>
+                    <th>500</th>
+                    <th>1000</th>
+                    <th>1500</th>
+                    <th>2000</th>
+                </tr>
+                <tr>
+                    <td><img src="imgs/fuyue36/origin/01Tsunami.jpg" class="fuyue800"></td>
+                    <td><a href="imgs/painterly/origin/iters/b1000/animation.svg" target="_blank"><img src="imgs/painterly/origin/iters/b1000/iter_99.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/iters/b1000/animation.svg" target="_blank"><img src="imgs/painterly/origin/iters/b1000/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/iters/b1000/animation.svg" target="_blank"><img src="imgs/painterly/origin/iters/b1000/iter_499.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/iters/b1000/animation.svg" target="_blank"><img src="imgs/painterly/origin/iters/b1000/iter_999.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/iters/b1000/animation.svg" target="_blank"><img src="imgs/painterly/origin/iters/b1000/iter_1499.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/iters/b1000/animation.svg" target="_blank"><img src="imgs/painterly/origin/iters/b1000/iter_1999.svg" class="fuyue800"></a></td>
+                    
+                </tr>
+                <tr>
+                    <td>MSE</td>
+                    <td>0.0143</td>
+                    <td>0.0108</td>
+                    <td>0.0088</td>
+                    <td>0.0079</td>
+                    <td>0.0076</td>
+                    <td>0.0074</td>
+                </tr>
+                <tr>
+                    <td>時間</td>
+                    <td>198.74s</td>
+                    <td>383.00s</td>
+                    <td>948.59s</td>
+                    <td>1910.28s</td>
+                    <td>2894.55s</td>
+                    <td>3885.03s</td>
+                    <!-- <td>465.36s (V100) <br> 1178.03s (Colab Tesla T4)</td>
+                    <td>708.52s (V100)</td>
+                    <td>430.44s (V100)</td>
+                    <td>671.51s (V100)</td> -->
+                </tr>
+            </table>
+
+
+            <!-- <table>
+                <tr>
+                    <th>Ground Truth</th>
+                    <th>色塊數: 1000</th>
+                    <th>色塊數: 2000</th>
                     <th>回合數: 2500</th>
                 </tr>
                 <tr>
                     <td><img src="imgs/fuyue36/01Tsunami.jpeg" class="fuyue800"></td>
-                    <!-- <td><a href="imgs/painterly/b100_i200/animation.svg" target="_blank"><img src="imgs/painterly/b100_i200/result.svg" class="fuyue800"></a></td>
-                    <td><a href="imgs/painterly/b500_i200/animation.svg" target="_blank"><img src="imgs/painterly/b500_i200/result.svg" class="fuyue800"></a></td>
-                    <td><a href="imgs/painterly/b1000_i200/animation.svg" target="_blank"><img src="imgs/painterly/b1000_i200/result.svg" class="fuyue800"></a></td>
-                    <td><a href="imgs/painterly/b2000_i200/animation.svg" target="_blank"><img src="imgs/painterly/b2000_i200/result.svg" class="fuyue800"></a></td>
-                    <td><a href="imgs/painterly/b2500_i200/animation.svg" target="_blank"><img src="imgs/painterly/b2500_i200/result.svg" class="fuyue800"></a></td> -->
+                    <td><a href="imgs/painterly/origin/b1000_i200/animation.svg" target="_blank"><img src="imgs/painterly/origin/b1000_i200/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/origin/b2000_i200/animation.svg" target="_blank"><img src="imgs/painterly/origin/b2000_i200/iter_199.svg" class="fuyue800"></a></td>
+                    
                 </tr>
                 <tr>
                     <td>MSE</td>
-                    <!-- <td>0.0310</td>
-                    <td>0.0231</td>
-                    <td>0.0168</td>
-                    <td>0.0132</td>
-                    <td>0.0123</td> -->
+                    <td>0.0108</td>
+                    <td>0.0079</td>
                 </tr>
                 <tr>
                     <td>時間</td>
-                    <!-- <td>43.83s</td>
-                    <td>57.72s</td>
-                    <td>147.90s</td>
-                    <td>290.64s</td>
-                    <td>360.81s</td> -->
+                    <td>398.06s <br> 764.52s (Colab Tesla T4)</td>
+                    <td>612.63s</td>
                 </tr>
-            </table>
-            <table>
-                <tr>
-                    <th>Ground Truth</th>
-                    <th>彩帶數: 1000</th>
-                    <th>彩帶數: 2000</th>
-                    <th>色塊數: 1000</th>
-                    <th>色塊數: 2000</th>
-                    <!-- <th>回合數: 2500</th> -->
-                </tr>
-                <tr>
-                    <td><img src="imgs/fuyue36/01Tsunami.jpeg" class="fuyue800"></td>
-                    <td><a href="imgs/painterly/b500_i200/animation.svg" target="_blank"><img src="imgs/painterly/b500_i200/result.svg" class="fuyue800"></a></td>
-                    <td><a href="imgs/painterly/b500_i200/animation.svg" target="_blank"><img src="imgs/painterly/b500_i200/result.svg" class="fuyue800"></a></td>
-                    <td><a href="imgs/painterly/b500_i200/animation.svg" target="_blank"><img src="imgs/painterly/b500_i200/result.svg" class="fuyue800"></a></td>
-                    
-                </tr>
-            </table>
+            </table> -->
         </div>
     </body>
 </html>
