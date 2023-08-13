@@ -1,0 +1,53 @@
+target img: imgs/fuyue36/Hokusai21_great-wave.jpeg
+use gpu: True
+num_paths: 1000
+max_width: 2.0
+use_lpips_loss: False
+num_iter: 2000
+use_blob: True
+
+point_lr 1.0
+width_lr 0.1
+color_lr 0.01
+iteration: 0, render loss:0.15356957912445068, Processed time: 17.60s
+iteration: 50, render loss:0.02331240475177765, Processed time: 106.54s
+iteration: 100, render loss:0.014290669932961464, Processed time: 198.74s
+iteration: 150, render loss:0.011951837688684464, Processed time: 290.92s
+iteration: 200, render loss:0.0107808206230402, Processed time: 383.00s
+iteration: 250, render loss:0.010084274224936962, Processed time: 476.69s
+iteration: 300, render loss:0.0096616605296731, Processed time: 570.81s
+iteration: 350, render loss:0.00935772992670536, Processed time: 664.62s
+iteration: 400, render loss:0.009137935936450958, Processed time: 758.53s
+iteration: 450, render loss:0.008957182057201862, Processed time: 852.68s
+iteration: 500, render loss:0.008779901079833508, Processed time: 948.59s
+iteration: 550, render loss:0.008636724203824997, Processed time: 1044.36s
+iteration: 600, render loss:0.008506271056830883, Processed time: 1139.11s
+iteration: 650, render loss:0.008383125066757202, Processed time: 1234.08s
+iteration: 700, render loss:0.00828577484935522, Processed time: 1329.84s
+iteration: 750, render loss:0.00819949246942997, Processed time: 1425.73s
+iteration: 800, render loss:0.008125064894557, Processed time: 1522.24s
+iteration: 850, render loss:0.008057848550379276, Processed time: 1617.68s
+iteration: 900, render loss:0.007996181957423687, Processed time: 1714.25s
+iteration: 950, render loss:0.007943880744278431, Processed time: 1811.76s
+iteration: 1000, render loss:0.007896252907812595, Processed time: 1910.28s
+iteration: 1050, render loss:0.00785766914486885, Processed time: 2008.09s
+iteration: 1100, render loss:0.007825548760592937, Processed time: 2105.57s
+iteration: 1150, render loss:0.00779179809615016, Processed time: 2203.60s
+iteration: 1200, render loss:0.007757540792226791, Processed time: 2302.43s
+iteration: 1250, render loss:0.007724803406745195, Processed time: 2400.35s
+iteration: 1300, render loss:0.0076943556778132915, Processed time: 2499.55s
+iteration: 1350, render loss:0.007668195758014917, Processed time: 2597.55s
+iteration: 1400, render loss:0.0076441774144768715, Processed time: 2696.83s
+iteration: 1450, render loss:0.007620345335453749, Processed time: 2795.20s
+iteration: 1500, render loss:0.007596604526042938, Processed time: 2894.55s
+iteration: 1550, render loss:0.007571182679384947, Processed time: 2993.19s
+iteration: 1600, render loss:0.007545764558017254, Processed time: 3092.16s
+iteration: 1650, render loss:0.007523730397224426, Processed time: 3190.25s
+iteration: 1700, render loss:0.00750383548438549, Processed time: 3289.82s
+iteration: 1750, render loss:0.007476950995624065, Processed time: 3389.36s
+iteration: 1800, render loss:0.0074570211581885815, Processed time: 3486.82s
+iteration: 1850, render loss:0.0074368249624967575, Processed time: 3585.26s
+iteration: 1900, render loss:0.007414780557155609, Processed time: 3684.27s
+iteration: 1950, render loss:0.007398787420243025, Processed time: 3782.98s
+iteration: 1999, render loss:0.007387897931039333, Processed time: 3883.18s
+Process time: 3885.02959 s

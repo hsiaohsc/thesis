@@ -1,0 +1,17 @@
+target img: imgs/fuyue36/01Tsunami.jpeg
+use gpu: True
+num_paths: 300
+max_width: 2.0
+use_lpips_loss: False
+num_iter: 200
+use_blob: True
+
+point_lr 1.0
+width_lr 0.1
+color_lr 0.01
+iteration: 0, render loss:0.13736918568611145
+iteration: 50, render loss:0.03131140023469925
+iteration: 100, render loss:0.025202568620443344
+iteration: 150, render loss:0.023778976872563362
+iteration: 199, render loss:0.02307066135108471
+Process time: 57.71687 s

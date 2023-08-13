@@ -1,0 +1,17 @@
+target img: imgs/original/01Tsunami.jpg
+use gpu: True
+num_paths: 200
+max_width: 211.0
+use_lpips_loss: False
+num_iter: 200
+use_circle: True
+
+point_lr 2.0
+width_lr 1.0
+color_lr 0.01
+iteration: 0, render loss:0.15416966378688812, Processed time: 1.92s
+iteration: 50, render loss:0.03889037296175957, Processed time: 53.63s
+iteration: 100, render loss:0.031081760302186012, Processed time: 105.01s
+iteration: 150, render loss:0.028872892260551453, Processed time: 155.48s
+iteration: 199, render loss:0.027930209413170815, Processed time: 205.81s
+Process time: 206.77027 s

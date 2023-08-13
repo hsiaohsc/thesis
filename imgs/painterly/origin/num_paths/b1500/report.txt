@@ -1,0 +1,17 @@
+target img: imgs/fuyue36/Hokusai21_great-wave.jpeg
+use gpu: True
+num_paths: 1500
+max_width: 2.0
+use_lpips_loss: False
+num_iter: 200
+use_blob: True
+
+point_lr 1.0
+width_lr 0.1
+color_lr 0.01
+iteration: 0, render loss:0.14293882250785828, Processed time: 6.84s
+iteration: 50, render loss:0.018142636865377426, Processed time: 119.63s
+iteration: 100, render loss:0.01174691691994667, Processed time: 234.95s
+iteration: 150, render loss:0.009867621585726738, Processed time: 351.71s
+iteration: 199, render loss:0.0088578499853611, Processed time: 470.39s
+Process time: 473.31633 s

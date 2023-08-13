@@ -1,0 +1,53 @@
+target img: imgs/fuyue36/01Tsunami.jpeg
+use gpu: True
+num_paths: 1000
+max_width: 2.0
+use_lpips_loss: False
+num_iter: 2000
+use_blob: True
+
+point_lr 1.0
+width_lr 0.1
+color_lr 0.01
+iteration: 0, render loss:0.13042795658111572
+iteration: 50, render loss:0.022390201687812805
+iteration: 100, render loss:0.018586337566375732
+iteration: 150, render loss:0.017447395250201225
+iteration: 200, render loss:0.016760066151618958
+iteration: 250, render loss:0.016318755224347115
+iteration: 300, render loss:0.01596933789551258
+iteration: 350, render loss:0.015689335763454437
+iteration: 400, render loss:0.015502015128731728
+iteration: 450, render loss:0.015323015861213207
+iteration: 500, render loss:0.015195784159004688
+iteration: 550, render loss:0.015117008239030838
+iteration: 600, render loss:0.01499661710113287
+iteration: 650, render loss:0.014861362986266613
+iteration: 700, render loss:0.014784932136535645
+iteration: 750, render loss:0.014702988788485527
+iteration: 800, render loss:0.014625687152147293
+iteration: 850, render loss:0.014561348594725132
+iteration: 900, render loss:0.014453581534326077
+iteration: 950, render loss:0.014439710415899754
+iteration: 1000, render loss:0.014343072660267353
+iteration: 1050, render loss:0.014290355145931244
+iteration: 1100, render loss:0.014229925349354744
+iteration: 1150, render loss:0.014186043292284012
+iteration: 1200, render loss:0.014148241840302944
+iteration: 1250, render loss:0.014090761542320251
+iteration: 1300, render loss:0.014032522216439247
+iteration: 1350, render loss:0.01400953158736229
+iteration: 1400, render loss:0.013972357846796513
+iteration: 1450, render loss:0.013937404379248619
+iteration: 1500, render loss:0.01390916295349598
+iteration: 1550, render loss:0.013897821307182312
+iteration: 1600, render loss:0.013884074054658413
+iteration: 1650, render loss:0.013851212337613106
+iteration: 1700, render loss:0.013805519789457321
+iteration: 1750, render loss:0.013773386366665363
+iteration: 1800, render loss:0.013773489743471146
+iteration: 1850, render loss:0.013761080801486969
+iteration: 1900, render loss:0.013711856678128242
+iteration: 1950, render loss:0.013723788782954216
+iteration: 1999, render loss:0.01372374128550291
+Process time: 1564.34678 s
