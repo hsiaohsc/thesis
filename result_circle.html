@@ -15,7 +15,183 @@
     </head>
     <body>
         <div>
-            <h2>Diffvg 神奈川沖浪圓形實驗</h2>
+            <h2>Diffvg 神奈川沖浪圓形參數實驗</h2>
+            <h3>實驗一、半徑參數</h3>
+            <p>固定參數：圓形數量 500, 迭代回合數 100, 限制最大半徑 1 倍</p>
+            <table>
+                <tr>
+                    <th>Ground Truth</th>
+                    <th>半徑大小: 10.0</th>
+                    <th>半徑大小: 20.0</th>
+                    <th>半徑大小: 25.0</th>
+                    <th>半徑大小: 50.0</th>
+                    <th>半徑大小: 100.0</th>
+                    <th>半徑大小: 150.0</th>
+                    
+                </tr>
+                <tr>
+                    <td><img src="imgs/fuyue36/original/01Tsunami.jpg" class="fuyue800"></td>
+                    <td><img src="imgs/painterly/origin/circle_param/c500_w10_f1_i100.svg" class="fuyue800"></td>
+                    <td><img src="imgs/painterly/origin/circle_param/c500_w20_f1_i100.svg" class="fuyue800"></td>
+                    <td><img src="imgs/painterly/origin/circle_param/c500_w25_f1_i100.svg" class="fuyue800"></td>
+                    <td><img src="imgs/painterly/origin/circle_param/c500_w50_f1_i100.svg" class="fuyue800"></td>
+                    <td><img src="imgs/painterly/origin/circle_param/c500_w100_f1_i100.svg" class="fuyue800"></td>
+                    <td><img src="imgs/painterly/origin/circle_param/c500_w150_f1_i100.svg" class="fuyue800"></td>
+                </tr>
+                <!-- <tr>
+                    <td><img src="imgs/fuyue36/original/01Tsunami.jpg" class="fuyue800"></td>
+                    <td><a href="imgs/painterly/circle_param/animation.svg" target="_blank"><img src="imgs/painterly/circle_param/iter_99.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/circle_param/animation.svg" target="_blank"><img src="imgs/painterly/circle_param/iter_99.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/circle_param/animation.svg" target="_blank"><img src="imgs/painterly/circle_param/iter_199.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/circle_param/animation.svg" target="_blank"><img src="imgs/painterly/circle_param/iter_99.svg" class="fuyue800"></a></td>
+                </tr> -->
+                <tr>
+                    <td>MSE</td>
+                    <td>0.1810</td>
+                    <td>0.1615</td>
+                    <td>0.1462</td>
+                    <td>0.0562</td>
+                    <td>0.0237</td>
+                    <td>0.0227</td>
+                </tr>
+                <tr>
+                    <td>時間(s)</td>
+                    <td>132.89</td>
+                    <td>129.61</td>
+                    <td>128.77</td>
+                    <td>122.62</td>
+                    <td>119.21</td>
+                    <td>118.67</td>
+                </tr>
+                <tr>
+                    <td>檔案大小(KB)</td>
+                    <td>64</td>
+                    <td>64.1</td>
+                    <td>64.3</td>
+                    <td>64.8</td>
+                    <td>69</td>
+                    <td>70.5</td>
+                </tr>
+            </table>
+
+            <br><hr>
+            <h3>實驗二、最大半徑參數</h3>
+            <p>固定參數：圓形數量 500, 迭代回合數 100, 半徑 25.0</p>
+            <!-- <p>說明：仿<a href="https://zh.wikipedia.org/zh-tw/%E7%82%B9%E5%BD%A9%E7%94%BB%E6%B4%BE">點彩畫派</a>畫風，圓形數量依照畫布大小與初始半徑而定</p> -->
+            <table>
+                
+                <tr>
+                    <th>Ground Truth</th>
+                    <th>最大半徑: 25.0 (x1)</th>
+                    <th>最大半徑: 50.0 (x2)</th>
+                    <th>最大半徑: 125.0 (x5)</th>
+                    <th>最大半徑: 無限制</th>
+                </tr>
+                <tr>
+                    <td><img src="imgs/fuyue36/original/01Tsunami.jpg" class="fuyue800"></td>
+                    <td><img src="imgs/painterly/origin/circle_param/c500_w25_f1_i100.svg" class="fuyue800"></td>
+                    <td><img src="imgs/painterly/origin/circle_param/c500_w25_f2_i100.svg" class="fuyue800"></td>
+                    <td><img src="imgs/painterly/origin/circle_param/c500_w25_f5_i100.svg" class="fuyue800"></td>
+                    <td><img src="imgs/painterly/origin/circle_param/c500_w25_f-1_i100.svg" class="fuyue800"></td>
+                </tr>
+                <!-- <tr>
+                    <td><img src="imgs/fuyue36/original/01Tsunami.jpg" class="fuyue800"></td>
+                    <td><a href="imgs/painterly/c_651_w50_i100/animation.svg" target="_blank"><img src="imgs/painterly/c_651_w50_i100/iter_99.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/c_651_w50_f1_i100/animation.svg" target="_blank"><img src="imgs/painterly/c_651_w50_f1_i100/iter_99.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/c_2604_w25_f2_i100/animation.svg" target="_blank"><img src="imgs/painterly/c_2604_w25_f2_i100/iter_99.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/c_2604_w25_f2_i300/animation.svg" target="_blank"><img src="imgs/painterly/c_2604_w25_f2_i300/iter_299.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/c_2604_w25_f0_i300/animation.svg" target="_blank"><img src="imgs/painterly/c_2604_w25_f0_i300/iter_299.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/c_16275_w10_f1_i100/animation.svg" target="_blank"><img src="imgs/painterly/c_16275_w10_f1_i100/iter_99.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/c_16275_w10_f1-5_i100/animation.svg" target="_blank"><img src="imgs/painterly/c_16275_w10_f1-5_i100/iter_99.svg" class="fuyue800"></a></td>
+                </tr> -->
+                <tr>
+                    <td>MSE</td>
+                    <td>0.1469</td>
+                    <td>0.0577</td>
+                    <td>0.0239</td>
+                    <td>0.0245</td>
+                </tr>
+                <tr>
+                    <td>時間(s)</td>
+                    <td>125.58</td>
+                    <td>125.00</td>
+                    <td>122.88</td>
+                    <td>122.31</td>
+                </tr>
+                <tr>
+                    <td>檔案大小(KB)</td>
+                    <td>64.3</td>
+                    <td>64.7</td>
+                    <td>70.5</td>
+                    <td>71</td>
+                </tr>
+            </table>
+
+            <br><hr>
+            <h3>實驗三、圓形數量參數</h3>
+            <p>固定參數：半徑 25.0, 限制最大半徑 2 倍 (50.0), 迭代回合數 100</p>
+            <!-- <p>說明：仿<a href="https://zh.wikipedia.org/zh-tw/%E7%82%B9%E5%BD%A9%E7%94%BB%E6%B4%BE">點彩畫派</a>畫風，圓形數量依照畫布大小與初始半徑而定</p> -->
+            <table>
+                
+                <tr>
+                    <th>Ground Truth</th>
+                    <th>圓形數量: 100</th>
+                    <th>圓形數量: 500</th>
+                    <th>圓形數量: 1000</th>
+                    <th>圓形數量: 1500</th>
+                    <th>圓形數量: 2000</th>
+                    <th>圓形數量: 2500</th>
+                </tr>
+                <tr>
+                    <td><img src="imgs/fuyue36/original/01Tsunami.jpg" class="fuyue800"></td>
+                    <td><img src="imgs/painterly/origin/circle_param/c100_w50_f2_i100r.svg" class="fuyue800"></td>
+                    <td><img src="imgs/painterly/origin/circle_param/c500_w50_f2_i100r.svg" class="fuyue800"></td>
+                    <td><img src="imgs/painterly/origin/circle_param/c1000_w50_f2_i100r.svg" class="fuyue800"></td>
+                    <td><img src="imgs/painterly/origin/circle_param/c1500_w50_f2_i100r.svg" class="fuyue800"></td>
+                    <td><img src="imgs/painterly/origin/circle_param/c2000_w50_f2_i100r.svg" class="fuyue800"></td>
+                    <td><img src="imgs/painterly/origin/circle_param/c2500_w50_f2_i100r.svg" class="fuyue800"></td>
+                </tr>
+                <!-- <tr>
+                    <td><img src="imgs/fuyue36/original/01Tsunami.jpg" class="fuyue800"></td>
+                    <td><a href="imgs/painterly/c_651_w50_i100/animation.svg" target="_blank"><img src="imgs/painterly/c_651_w50_i100/iter_99.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/c_651_w50_f1_i100/animation.svg" target="_blank"><img src="imgs/painterly/c_651_w50_f1_i100/iter_99.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/c_2604_w25_f2_i100/animation.svg" target="_blank"><img src="imgs/painterly/c_2604_w25_f2_i100/iter_99.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/c_2604_w25_f2_i300/animation.svg" target="_blank"><img src="imgs/painterly/c_2604_w25_f2_i300/iter_299.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/c_2604_w25_f0_i300/animation.svg" target="_blank"><img src="imgs/painterly/c_2604_w25_f0_i300/iter_299.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/c_16275_w10_f1_i100/animation.svg" target="_blank"><img src="imgs/painterly/c_16275_w10_f1_i100/iter_99.svg" class="fuyue800"></a></td>
+                    <td><a href="imgs/painterly/c_16275_w10_f1-5_i100/animation.svg" target="_blank"><img src="imgs/painterly/c_16275_w10_f1-5_i100/iter_99.svg" class="fuyue800"></a></td>
+                </tr> -->
+                <tr>
+                    <td>MSE</td>
+                    <td>0.0856</td>
+                    <td>0.0236</td>
+                    <td>0.0176</td>
+                    <td>0.0152</td>
+                    <td>0.0137</td>
+                    <td>0.0126</td>
+                </tr>
+                <tr>
+                    <td>時間(s)</td>
+                    <td>114.29</td>
+                    <td>121.69</td>
+                    <td>142.53</td>
+                    <td>167.53</td>
+                    <td>195.22</td>
+                    <td>218.55</td>
+                </tr>
+                <tr>
+                    <td>檔案大小(KB)</td>
+                    <td>13.2</td>
+                    <td>69.8</td>
+                    <td>141</td>
+                    <td>211</td>
+                    <td>282</td>
+                    <td>353</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h2>Diffvg 神奈川沖浪圓形初始位置實驗</h2>
             <h3>實驗一、亂數產生半徑與位置參數</h3>
             <table>
                 <tr>
