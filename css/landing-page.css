@@ -35,7 +35,8 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    /* background: url(../img/intro-bg.jpg) no-repeat center center; */
+    background: url(../imgs/painterly/c_16275_w10_f1_i100/iter_99.svg) no-repeat bottom center;
     background-size: cover;
 }
 
@@ -49,6 +50,11 @@ h6 {
     margin: 0.8%;
     text-shadow: 8px 2px 3px rgba(0,0,0,0.6);
     font-size: 5em;
+}
+.intro-message > h2 {
+    margin: 0.8%;
+    text-shadow: 8px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
 }
 
 .intro-divider {
