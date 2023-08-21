@@ -36,7 +36,8 @@ h6 {
     text-align: center;
     color: #f8f8f8;
     /* background: url(../img/intro-bg.jpg) no-repeat center center; */
-    background: url(../imgs/painterly/c_16275_w10_f1_i100/iter_99.svg) no-repeat bottom center;
+    /* background: url(../imgs/painterly/c_16275_w10_f1_i100/iter_99.svg) no-repeat bottom center; */
+    background: url(https://github.com/hsiaohsc/thesis/assets/42900685/052b1633-5d6a-4338-818e-8ff7c28d9305) no-repeat bottom center;
     background-size: cover;
 }
 
