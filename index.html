@@ -95,7 +95,7 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-					<h2 class="section-heading">摘要</h2> <img src="chang.svg" alt width="100px">
+					<h2 class="section-heading">摘要</h2> <embed src="chang.svg" width="100px">
                     <br><br>
 					<p class="lead">圖形的非寫實計算繪製是電腦圖學領域中相當成熟的技術，有許多將現實虛擬化的種種應用。伴隨著可微分光柵化器的技術出現，使得不能進行卷積的向量結構也能夠利用梯度下降的方式進行機器學習。
                         本研究針對浮世繪代表的冨嶽三十六景，探索其進行向量非寫實電腦計算繪製的可能性。透過可微分光柵化器，遍歷關於構成向量圖的形狀選擇、形狀的數量以及迭代的次數所生成的向量非寫實電腦計算繪製結果向量圖。</p>
@@ -108,7 +108,7 @@
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
 					<br><br><br>
                     <!-- <img class="img-responsive" src="img/dog.png" alt=""> -->
-                    <!-- <img class="img-responsive" src="imgs/painterly/origin/s_1500_w2_i200/iter_199.svg" alt=""> -->
+                    <!-- <img class="img-responsive" src="imgs/painterly/origin/s_1500_w2_i200/iter_199.svg"> -->
                     <img class="img-responsive" src="https://github.com/hsiaohsc/thesis/assets/42900685/c653cff5-112b-4537-b45c-d45af3052efa" alt="">
                     <br>
                     <!-- <img class="img-responsive" src="imgs/painterly/origin/c_16275_w10_f1_i100/iter_99.svg" alt=""> -->
@@ -200,14 +200,27 @@
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
                     <h3>實驗一、與傳統演算法比較</h3>
-                    <p>與 Inkscape</p>
+                    <p>與 SVG 編輯軟體 Inkscape 使用的 Potrace 演算法進行比較。</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <a href="result_inkscape.html" class="btn btn-default btn-lg" target="_blank"> 
+                        <span class="network-name" style="font-weight: 900;">看結果</span>
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                <a href="result_inkscape.html" class="btn btn-default btn-lg"> 
-                    <span class="network-name" style="font-weight: 900;">看結果</span>
-                </a>
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <h3>實驗二、使用向量路徑</h3>
+                    <p></p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <a href="result_paths.html" class="btn btn-default btn-lg" target="_blank"> 
+                        <span class="network-name" style="font-weight: 900;">看結果</span>
+                    </a>
+                </div>
             </div>
+            
 
         </div>
     </div>
